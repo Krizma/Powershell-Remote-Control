@@ -34,7 +34,6 @@ def intro(message):
             return
             break
 
-
 def volume():
     currentDeviceRaw = subprocess.getoutput('powershell.exe Get-AudioDevice -Playback').replace("\n", " : ")
     currentDevice = currentDeviceRaw.split(" : ")
